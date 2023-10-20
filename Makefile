@@ -6,16 +6,21 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/19 22:01:52 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/10/20 02:10:48 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
-NAME=libft
+NAME=libft.a
 
-C_SOURCE=$(wildcard ./srcs/*.c)
+C_SOURCE= ft_isalnum.c \
+			 ft_isalpha.c \
+			 ft_isascii.c \
+			 ft_isdigit.c \
+			 ft_isprint.c \
+			 ft_strlen.c 
 
-H_SOURCE=$(wildcard ./includes/*.h)
+HEADER= libft.h
 
 OBJ=$(C_SOURCE:.c=.o)
 
