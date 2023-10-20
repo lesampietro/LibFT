@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/20 03:25:01 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/10/20 04:45:09 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,10 @@ C_SOURCE= ft_isalnum.c \
 				 ft_isprint.c \
 				 ft_strlen.c \
 				 ft_tolower.c \
-				 ft_toupper.c
+				 ft_toupper.c \
+				 ft_putchar_fd.c \
+				 ft_putstr_fd.c \
+				 ft_putendl_fd.c
 			 
 
 HEADER=libft.h
