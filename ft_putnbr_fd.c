@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:15:05 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/22 20:50:50 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/22 21:36:42 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ void	ft_putnbr_fd(int n, int fd)
 		n *= -1;
 	}
 	if (n / 10 > 0)
-		ft_putnbr_fd(n / 10, 1);
-	ft_putchar_fd('0' + (n % 10), 1);
+		ft_putnbr_fd(n / 10, fd);
+	ft_putchar_fd('0' + (n % 10), fd);
 }
