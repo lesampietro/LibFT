@@ -6,31 +6,54 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 20:54:47 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/22 21:34:33 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/23 17:29:28 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isspace(int c)
-{
-	if (c == ' ' || c == '\f' || c == '\n'
-		|| c == '\r' || c == '\t' || c == '\v')
-		return (0);
-	return (1);
+int	ft_isspace(char c)
+{	
+	if ((c >= 9 && c <= 13) || (c == ' '))
+		return (1);
+	return (0);
 }
 
-int	atoi(const char *nptr)
+int	ft_issign(char c)
+{
+	if ((c == '-') || (c == '+'))
+		return (1);
+	return (0);
+}
+
+int	ft_atoi(const char *nptr)
 {
 	int	res;
 	int	i;
+	int	sign;
 
 	i = 0;
-	while (*nptr)
+	res = 0;
+	sign = 1;
+	while (ft_isspace(nptr[i]))
+		i++;
+	if (ft_issign(nptr[i]))
 	{
-		if (isspace(nptr[i]) == 0)
-			i++;
-		if (nptr[i] >= '0' && nptr[i] <= '9')
-			res = nptr[i + 0];
-			i++;
+		if (nptr[i] == '-')
+				sign = -1;
+		i++;
 	}
-	return (res);
+	while (nptr[i] >= 48 && nptr[i] <= 57)
+	{
+		res = res * 10 + (nptr[i] - '0');
+		i++;
+	}
+	return (res * sign);
 }
+
+// int	main(void)
+// {
+// 	char	*str;
+
+// 	str = "-+91+98";
+// 	printf("%d", ft_atoi(str));
+// 	return (0);
+// }
