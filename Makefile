@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/23 20:51:08 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/10/23 21:13:25 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,8 @@
 NAME=libft.a
 
 C_SOURCE= ft_isalnum.c \
+				 ft_atoi.c \
+				 ft_calloc.c \
 				 ft_isalpha.c \
 				 ft_isascii.c \
 				 ft_isdigit.c \
@@ -22,13 +24,12 @@ C_SOURCE= ft_isalnum.c \
 				 ft_putendl_fd.c \
 				 ft_putnbr_fd.c \
 				 ft_putstr_fd.c \
+				 ft_strdup.c \
 				 ft_striteri.c \
 				 ft_strlen.c \
+				 ft_strmapi.c \
 				 ft_tolower.c \
 				 ft_toupper.c \
-				 ft_atoi.c \
-				 ft_calloc.c \
-				 ft_strdup.c
 			 
 
 HEADER=libft.h

@@ -6,33 +6,28 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 17:38:39 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/23 20:44:05 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/23 22:04:36 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	char	*str;
+	void	*ptr;
+	size_t	total_size;
+	int		i;
 
-	if (!str)
-		return (str);
-	if ((nmemb == 0) || (size == 0))
-		return (str);
-	else if (str != 0)
-		str = (char *)malloc(nmemb * sizeof(int));
-	return (str);
+	total_size = nmemb * size;
+	ptr = malloc(total_size);
+	if (ptr != NULL)
+	{
+		i = 0;
+		while (i < total_size)
+		{
+			((unsigned char *)ptr)[i] = 0;
+			i++;
+		}
+	}
+	return (ptr);
 }
-
-// int	main()
-// {
-// 	int				ptr;
-// 	unsigned int	nmemb;
-
-// 	ptr = 8792791;
-// 	nmemb = 20;
-// 	*ft_calloc(nmemb, ptr);
-// 	return (0);
-// }
