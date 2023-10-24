@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:15:41 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/23 21:39:39 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/23 22:09:51 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-//hipoteses: passar a funçao f em str após copiar os caracteres
-// de s[i] p/ str[i]
+//'\0' has zero value
+// Whenever running through a string in the while loop, only characters
+// with bigger values in the ascii table wil be considered.
