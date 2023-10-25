@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:15:41 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/23 22:09:51 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/25 18:43:54 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
-
-//'\0' has zero value
-// Whenever running through a string in the while loop, only characters
-// with bigger values in the ascii table wil be considered.

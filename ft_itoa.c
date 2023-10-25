@@ -6,12 +6,11 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 22:11:36 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/25 18:35:58 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/25 18:43:18 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_count_digits(int n)
 {
@@ -36,9 +35,6 @@ int	ft_count_digits(int n)
 	digits++;
 	return (digits);
 }
-// About ft_count_digits() first if (treating long_min):
-// divide by ten to count the "-"
-// transform in negative number so it enters next if
 
 void	*ft_makestr(int n, int size, char *str)
 {
@@ -65,9 +61,6 @@ void	*ft_makestr(int n, int size, char *str)
 	return (str);
 }
 
-// Max and min int values can be transformed into a long int variable
-// in order to have them treated
-
 char	*ft_itoa(int n)
 {
 	char	*str;
@@ -81,16 +74,3 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-// int main(void)
-// {
-// 	char *res = ft_itoa(156);
-// 	char *res2 = ft_itoa(-623);
-// 	char *res3 = ft_itoa(-0);
-
-// 	printf("resposta: %s", res);
-// 	printf("resposta: %s", res2);
-// 	printf("resposta: %s", res3);
-// 	free(res);
-// 	free(res2);
-// 	free(res3);
-// }

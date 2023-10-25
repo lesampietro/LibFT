@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 20:54:47 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/23 17:29:28 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/25 18:40:52 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,12 +48,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (res * sign);
 }
-
-// int	main(void)
-// {
-// 	char	*str;
-
-// 	str = "-+91+98";
-// 	printf("%d", ft_atoi(str));
-// 	return (0);
-// }
