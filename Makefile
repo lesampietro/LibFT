@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/23 21:13:25 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/10/24 23:55:10 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,14 +20,17 @@ C_SOURCE= ft_isalnum.c \
 				 ft_isascii.c \
 				 ft_isdigit.c \
 				 ft_isprint.c \
+				 ft_itoa.c \
 				 ft_putchar_fd.c \
 				 ft_putendl_fd.c \
 				 ft_putnbr_fd.c \
 				 ft_putstr_fd.c \
 				 ft_strdup.c \
 				 ft_striteri.c \
+				 ft_strjoin.c \
 				 ft_strlen.c \
 				 ft_strmapi.c \
+				 ft_substr.c \
 				 ft_tolower.c \
 				 ft_toupper.c \
 			 
