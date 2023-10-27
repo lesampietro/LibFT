@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/24 23:55:10 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/10/26 22:03:52 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,6 +28,8 @@ C_SOURCE= ft_isalnum.c \
 				 ft_strdup.c \
 				 ft_striteri.c \
 				 ft_strjoin.c \
+				 ft_strlcat.c \
+				 ft_strlcpy.c \
 				 ft_strlen.c \
 				 ft_strmapi.c \
 				 ft_substr.c \

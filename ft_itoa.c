@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 22:11:36 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/25 18:43:18 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/25 19:41:16 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,4 +73,3 @@ char	*ft_itoa(int n)
 	ft_makestr(n, size, str);
 	return (str);
 }
-
