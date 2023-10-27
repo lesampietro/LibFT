@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 16:15:41 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/25 18:43:54 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/27 04:53:11 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	while (s[i] != '\0')
 		i++;
 	str = (char *) malloc((i + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	i = 0;
 	while (s[i] != '\0')
 	{

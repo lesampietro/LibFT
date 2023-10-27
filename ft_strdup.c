@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 20:48:34 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/23 21:00:42 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/27 04:53:00 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strdup(const char *s)
 	while (s[i] != '\0')
 		i++;
 	str = (char *) malloc((i + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
 	i = 0;
 	while (s[i] != '\0')
 	{
