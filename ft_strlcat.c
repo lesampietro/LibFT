@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 20:04:11 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/27 00:25:52 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/10/27 02:06:56 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,25 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	unsigned int	i;
-	unsigned int	j;
-	unsigned int	k;
+	size_t	srclen;
+	size_t	dstlen;
+	size_t	total_size;
+	size_t	i;
 
+	srclen = ft_strlen(src);
+	dstlen = ft_strlen(dst);
 	i = 0;
-	j = 0;
-	k = 0;
-	while (dst[i] != '\0' && i < size)
-		i++;
-	while (src[j] != '\0')
-		j++;
-	if ((i + 1) == size || j == size)
-		return (i + j);
-	if ((i + j) < size)
+	if (size == 0)
+		return (srclen);
+	while (src[i] != '\0' && (dstlen + i) < (size - 1))
 	{
-		while (src[k] != '\0' && (i + k) < size)
-		{
-			dst[i + k] = src[k];
-			k++;
-		}
-		dst[i + k] = '\0';
+		dst[dstlen + i] = src[i];
+		i++;
 	}
-	return (i + j);
+	dst[dstlen + i] = '\0';
+	if (size > dstlen)
+		total_size = dstlen + srclen;
+	else
+		total_size = size + srclen;
+	return (total_size);
 }
-
