@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/10/31 19:35:13 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/11/01 23:36:35 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,8 @@ C_SOURCE= ft_isalnum.c \
 				 ft_isdigit.c \
 				 ft_isprint.c \
 				 ft_itoa.c \
+				 ft_memchr.c \
+				 ft_memcmp.c \
 				 ft_memcpy.c \
 				 ft_memset.c \
 				 ft_memmove.c \
