@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 04:17:47 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/27 04:48:46 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/06 21:03:08 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	i;
 
-	i = 0;
 	i = ft_strlen(s);
 	while (i > 0 && s[i] != (unsigned char)c)
 		i--;

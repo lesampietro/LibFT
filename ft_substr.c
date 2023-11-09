@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 23:45:36 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/27 02:02:27 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/09 18:31:29 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
-	int		i;
-	int		txt_size;
+	size_t	i;
+	size_t	txt_size;
 
 	i = 0;
 	txt_size = ft_strlen(s);

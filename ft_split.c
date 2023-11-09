@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/20 04:38:25 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/11/06 18:04:15 by lsampiet         ###   ########.fr       */
+/*   Created: 2023/11/06 17:11:55 by lsampiet          #+#    #+#             */
+/*   Updated: 2023/11/06 18:03:50 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c, int fd)
+char	**ft_split(char const *s, char c)
 {
-	write(fd, &c, 1);
+	(void)s;
+	(void)c;
+	return (NULL);
 }
