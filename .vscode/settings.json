@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "ft_strlen.C": "cpp",
-        "limits": "c"
-    },
-    "editor.renderWhitespace": "all"
-}

@@ -6,11 +6,12 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 22:11:36 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/31 16:48:13 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/11 21:33:59 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 int	ft_count_digits(int n)
 {
@@ -36,28 +37,26 @@ int	ft_count_digits(int n)
 	return (digits);
 }
 
-void	*ft_makestr(int n, int size, char *str)
+char	*ft_makestr(int n, int digits, char *str)
 {
-	int		i;
-	int		neg;
+	int		begin;
 	long	max;
 
-	i = size;
+	begin = 0;
 	max = n;
-	while ((i - 1) >= 0)
+	str[digits] = '\0';
+	if (max < 0)
 	{
-		if (max < 0)
-		{
-			max *= -1;
-			neg = 1;
-		}
-		str[i - 1] = (max % 10) + '0';
-		max /= 10;
-		i--;
-	}
-	if (neg == 1)
 		str[0] = '-';
-	str[size] = '\0';
+		begin = 1;
+		max *= -1;
+	}
+	while (digits > begin)
+	{
+		str[digits - 1] = (max % 10) + '0';
+		max /= 10;
+		digits--;
+	}
 	return (str);
 }
 
@@ -70,6 +69,5 @@ char	*ft_itoa(int n)
 	str = malloc((size + 1) * sizeof(char));
 	if (!str)
 		return (NULL);
-	ft_makestr(n, size, str);
-	return (str);
+	return (ft_makestr(n, size, str));
 }

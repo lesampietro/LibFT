@@ -6,9 +6,11 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 20:54:47 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/25 18:40:52 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/11 23:04:30 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isspace(char c)
 {	
@@ -40,8 +42,10 @@ int	ft_atoi(const char *nptr)
 		if (nptr[i] == '-')
 				sign = -1;
 		i++;
+		if (ft_issign(nptr[i]) || ft_isspace(nptr[i]))
+			return (NULL);
 	}
-	while (nptr[i] >= 48 && nptr[i] <= 57)
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
 		res = res * 10 + (nptr[i] - '0');
 		i++;
