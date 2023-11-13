@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/22 20:54:47 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/11/11 23:04:30 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 19:23:59 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ int	ft_atoi(const char *nptr)
 	if (ft_issign(nptr[i]))
 	{
 		if (nptr[i] == '-')
-				sign = -1;
+			sign = -1;
 		i++;
 		if (ft_issign(nptr[i]) || ft_isspace(nptr[i]))
-			return (NULL);
+			return (0);
 	}
 	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{

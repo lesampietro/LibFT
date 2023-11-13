@@ -6,12 +6,11 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 22:11:36 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/11/11 21:33:59 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:44:58 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_count_digits(int n)
 {

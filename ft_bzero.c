@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 03:51:52 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/27 04:05:25 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 19:24:36 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*z;
-	int				i;
+	size_t			i;
 
-	z = s;
+	z = (unsigned char *)s;
 	i = 0;
 	while (i != n)
 	{

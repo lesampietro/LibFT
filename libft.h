@@ -15,9 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <string.h>
-# include <fcntl.h>
-# include <stddef.h>
 
 int		ft_atoi(const char *nptr);
 int		ft_isalnum(int c);

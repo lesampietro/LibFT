@@ -6,9 +6,11 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 00:18:40 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/20 02:14:46 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 13:44:38 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isascii(int c)
 {

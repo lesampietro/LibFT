@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/27 03:13:15 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/10/27 03:59:02 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 19:26:13 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*m;
-	int				i;
+	size_t			i;
 
 	m = s;
 	i = 0;
