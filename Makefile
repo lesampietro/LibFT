@@ -6,7 +6,7 @@
 #    By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 21:58:01 by lsampiet          #+#    #+#              #
-#    Updated: 2023/11/12 00:45:23 by lsampiet         ###   ########.fr        #
+#    Updated: 2023/11/21 19:05:07 by lsampiet         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,28 +46,44 @@ C_SOURCE= ft_isalnum.c \
 				 ft_strtrim.c \
 				 ft_substr.c \
 				 ft_tolower.c \
-				 ft_toupper.c \
+				 ft_toupper.c
 
-HEADER=libft.h
+C_BONUS= ft_lstnew_bonus.c \
+				 ft_lstadd_front_bonus.c \
+				 ft_lstsize_bonus.c \
+				 ft_lstlast_bonus.c \
+				 ft_lstadd_back_bonus.c \
+				 ft_lstdelone_bonus.c \
+				 ft_lstclear_bonus.c \
+				 ft_lstiter_bonus.c \
+				 ft_lstmap_bonus.c
 
-OBJ=$(C_SOURCE:.c=.o)
+HEADER=./
 
-CC=cc
+C_OBJ=$(C_SOURCE:.c=.o)
 
-C_FLAGS=-Wall -Werror -Wextra
+BONUS_OBJ=$(C_BONUS:.c=.o)
+
+CC= cc
+
+C_FLAGS= -Wall -Werror -Wextra
 
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	ar rcs $@ $^ 
+$(NAME): $(C_OBJ)
+
+bonus: $(BONUS_OBJ)
 
 %.o: %.c
-	$(CC) -c $< -o $@ $(CC_FLAGS) -I $(HEADER) 
+	$(CC) $(C_FLAGS) -I $(HEADER) -c $< -o $@
+	ar rcs $(NAME) $@
 
 clean:
-	rm -f *.o
+	rm -f $(C_OBJ) $(BONUS_OBJ)
 
 fclean: clean
-	rm -f *.a
+	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY= clean fclean re all bonus

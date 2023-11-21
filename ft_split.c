@@ -6,7 +6,7 @@
 /*   By: lsampiet <lsampiet@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 17:11:55 by lsampiet          #+#    #+#             */
-/*   Updated: 2023/11/13 19:27:12 by lsampiet         ###   ########.fr       */
+/*   Updated: 2023/11/13 19:33:33 by lsampiet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,6 @@ void	ft_free_array(char **new)
 void	ft_make_array(char const *s, char c, char **new)
 {
 	int	i;
-	int	j;
 	int	x;
 	int	start;
 
@@ -61,15 +60,14 @@ void	ft_make_array(char const *s, char c, char **new)
 	x = -1;
 	while (s[i])
 	{
-		j = 0;
 		while (s[i] && s[i] == (unsigned char)c)
 			i++;
 		if (s[i] != (unsigned char)c)
 			start = i;
-		while (s[i] && s[i++] != (unsigned char)c)
-			j++;
-		if (j > 0)
-			new[++x] = ft_substr(s, start, j);
+		while (s[i] && s[i] != (unsigned char)c)
+			i++;
+		if (start != i)
+			new[++x] = ft_substr(s, start, (i - start));
 		if (!new[x])
 		{
 			ft_free_array(new);
