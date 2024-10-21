@@ -65,14 +65,14 @@
  - [x] [ft_putendl_fd](https://github.com/lesampietro/LibFT/blob/master/ft_putendl_fd.c) - outputs a string to a file descriptor, followed by a newline character.
  - [x] [ft_putnbr_fd](https://github.com/lesampietro/LibFT/blob/master/ft_putnbr_fd.c) - outputs an integer to a specified file descriptor.
 ### 🌟 Linked list functions
- - [x] [ft_lstnew](https://github.com/lesampietro/LibFT/blob/master/ft_lstnew.c) - creates a new linked list element with a given content.
- - [x] [ft_lstadd_front](https://github.com/lesampietro/LibFT/blob/master/ft_lstadd_front.c) - adds an element at the beginning of a list.
- - [x] [ft_lstsize](https://github.com/lesampietro/LibFT/blob/master/ft_lstsize.c) - counts the number of elements in a list.
- - [x] [ft_lstlast](https://github.com/lesampietro/LibFT/blob/master/ft_lstlast.c) - returns the last element of the list.
- - [x] [ft_lstadd_back](https://github.com/lesampietro/LibFT/blob/master/ft_lstadd_back.c) - adds an element to the end of the linked list.
- - [x] [ft_lstclear](https://github.com/lesampietro/LibFT/blob/master/ft_lstclear.c) - deletes and frees all elements of a linked list.
- - [x] [ft_lstiter](https://github.com/lesampietro/LibFT/blob/master/ft_lstiter.c) - iterates over a linked list and applies a function to each element.
- - [x] [ft_lstmap](https://github.com/lesampietro/LibFT/blob/master/ft_lstmap.c) - creates a new linked list by applying a function to each element of an existing list.
+ - [x] [ft_lstnew](https://github.com/lesampietro/LibFT/blob/master/ft_lstnew_bonus.c) - creates a new linked list element with a given content.
+ - [x] [ft_lstadd_front](https://github.com/lesampietro/LibFT/blob/master/ft_lstadd_front_bonus.c) - adds an element at the beginning of a list.
+ - [x] [ft_lstsize](https://github.com/lesampietro/LibFT/blob/master/ft_lstsize_bonus.c) - counts the number of elements in a list.
+ - [x] [ft_lstlast](https://github.com/lesampietro/LibFT/blob/master/ft_lstlast_bonus.c) - returns the last element of the list.
+ - [x] [ft_lstadd_back](https://github.com/lesampietro/LibFT/blob/master/ft_lstadd_back_bonus.c) - adds an element to the end of the linked list.
+ - [x] [ft_lstclear](https://github.com/lesampietro/LibFT/blob/master/ft_lstclear_bonus.c) - deletes and frees all elements of a linked list.
+ - [x] [ft_lstiter](https://github.com/lesampietro/LibFT/blob/master/ft_lstiter_bonus.c) - iterates over a linked list and applies a function to each element.
+ - [x] [ft_lstmap](https://github.com/lesampietro/LibFT/blob/master/ft_lstmap_bonus.c) - creates a new linked list by applying a function to each element of an existing list.
 
 ## How to Use
 ### 1.Clone and Build
