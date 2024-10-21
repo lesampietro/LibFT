@@ -70,6 +70,7 @@
  - [x] [ft_lstsize](https://github.com/lesampietro/LibFT/blob/master/ft_lstsize_bonus.c) - counts the number of elements in a list.
  - [x] [ft_lstlast](https://github.com/lesampietro/LibFT/blob/master/ft_lstlast_bonus.c) - returns the last element of the list.
  - [x] [ft_lstadd_back](https://github.com/lesampietro/LibFT/blob/master/ft_lstadd_back_bonus.c) - adds an element to the end of the linked list.
+ - [x] [ft_lst_delone](https://github.com/lesampietro/LibFT/blob/master/ft_lstdelone_bonus.c) - frees the memory of a single linked list node (lst) using the function passed as del to free the node’s content.
  - [x] [ft_lstclear](https://github.com/lesampietro/LibFT/blob/master/ft_lstclear_bonus.c) - deletes and frees all elements of a linked list.
  - [x] [ft_lstiter](https://github.com/lesampietro/LibFT/blob/master/ft_lstiter_bonus.c) - iterates over a linked list and applies a function to each element.
  - [x] [ft_lstmap](https://github.com/lesampietro/LibFT/blob/master/ft_lstmap_bonus.c) - creates a new linked list by applying a function to each element of an existing list.
