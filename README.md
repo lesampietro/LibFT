@@ -55,7 +55,7 @@
 ### ✍🏻 Non-standard functions
  - [x] [ft_substr](https://github.com/lesampietro/LibFT/blob/master/ft_substr.c) - extracts and returns a substring from a given string starting at a specific index and up to a specified length.
  - [x] [ft_strjoin](https://github.com/lesampietro/LibFT/blob/master/ft_strjoin.c) - concatenates two strings into a new string.
- - [x] [ft_strtrim](https://github.com/lesampietro/LibFT/blob/master/ft_strtrinm.c) - removes specified leading and trailing characters from a string.
+ - [x] [ft_strtrim](https://github.com/lesampietro/LibFT/blob/master/ft_strtrim.c) - removes specified leading and trailing characters from a string.
  - [x] [ft_split](https://github.com/lesampietro/LibFT/blob/master/ft_split.c) - splits a string into an array of substrings based on a given delimiter character.
  - [x] [ft_itoa](https://github.com/lesampietro/LibFT/blob/master/ft_itoa.c) - converts an integer to its string representation.
  - [x] [ft_strmapi](https://github.com/lesampietro/LibFT/blob/master/ft_strmapi.c) - applies a function to each character of a string and returns a new string with the modified characters.
