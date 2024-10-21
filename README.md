@@ -12,7 +12,7 @@
    For the mandatory part there are some basic files that need to be submitted:
    | **.c** | **.h** | **Makefile** |
    | ------ | ------ | ------------ |
-   | Contain the implementation of the LibFT functions in C. | Contain the declarations (prototypes) for the LibFT functions, and can be included in other .c files using the `#include` directive. | Specifies how to compile the .c files and link them into a library (typically `libft.a` for a static library). The Makefile automates this process. | 
+   | These files contain the implementation of the LibFT functions in C. | The header file contain the declarations (prototypes) for the LibFT functions, and can be included in other .c files using the `#include` directive. | The Makefile specifies how to compile the .c files and link them into a library (typically `libft.a` for a static library). | 
    
    ### 🌟 Bonus
    The bonus part requires implementing additional functions for handling linked lists, as well as declaring a `struct` to define the linked list nodes, as showed below:
