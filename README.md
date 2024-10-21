@@ -4,7 +4,7 @@
    LibFT is the first project in [42](https://www.42sp.org.br/)'s common core. 
    This project involves creating a comprehensive library of essential C functions that will be utilized in subsequent projects. Many of these functions are reimplementations of C standard library functions.
    
-   ![approved-125%](https://github.com/user-attachments/assets/d2b2c0cc-d5d4-47dc-9907-813af2dccdc2) 
+   ![approved-+-bonus-🌟-125%](https://github.com/user-attachments/assets/116f663f-0800-4cee-99fb-02a00401b655)
    [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
    
    ##  Requirements
